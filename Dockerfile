@@ -59,4 +59,4 @@ EXPOSE 443 8443
 
 VOLUME [“/opt/shib-jetty-base/logs“]
 
-CMD ["run-jetty.sh"]
+CMD [“/opt/container-scripts/run-jetty.sh"]
