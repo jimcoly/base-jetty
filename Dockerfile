@@ -57,6 +57,6 @@ RUN chmod +x /opt/container-scripts/run-jetty.sh
 ## Opening 443 (browser TLS), 8443 (SOAP/mutual TLS auth)... 80 specifically not included.
 EXPOSE 443 8443
 
-VOLUME [“/opt/shib-jetty-base/logs“]
+VOLUME ["/opt/shib-jetty-base/logs"]
 
-ENTRYPOINT [“/opt/container-scripts/run-jetty.sh"]
+ENTRYPOINT ["/opt/container-scripts/run-jetty.sh"]

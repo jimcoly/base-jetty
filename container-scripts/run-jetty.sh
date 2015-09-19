@@ -6,4 +6,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 sed -i "s/^-Xmx.*$/-Xmx$JETTY_MAX_HEAP/g" /opt/shib-jetty-base/start.ini
 
-/etc/init.d/jetty run
+exec /etc/init.d/jetty run
