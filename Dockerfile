@@ -52,7 +52,7 @@ RUN useradd jetty -U -s /bin/false \
 
 ADD container-scripts/ /opt/container-scripts/
 
-RUN chmod +x /opt/container-scripts/
+RUN chmod +x /opt/container-scripts/run-jetty.sh
 
 ## Opening 443 (browser TLS), 8443 (SOAP/mutual TLS auth)... 80 specifically not included.
 EXPOSE 443 8443
