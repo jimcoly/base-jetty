@@ -46,8 +46,6 @@ RUN set -x; \
     && echo "7286c7cb836126a403eb1c2c792bde9ce6018226  libsetuid-8.1.9.v20130131.so" | sha1sum -c - \
     && mv libsetuid-8.1.9.v20130131.so /opt/shib-jetty-base/lib/ext/
 
-ADD shib-jetty-base/ /opt/shib-jetty-base/
-
 RUN useradd jetty -U -s /bin/false \
     && chown -R jetty:root /opt/jetty \
     && chown -R jetty:root /opt/shib-jetty-base 
